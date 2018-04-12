@@ -95,7 +95,7 @@ void MainWindow::openFolderSlot()
 
 void MainWindow::setFileFilter()
 {
-    fileFilterList << "*.jpg" << "*.jpeg" << "*.png"\
+    fileFilterList << "*.jpg" << "*.jpeg" << "*.png" <<"*.gif"\
                    << "*.JPG" << "*.JPEG" << "*.PNG";
 }
 
@@ -220,7 +220,7 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
         qDebug() << "key j prev";
         prevShowSlot();
     }
-    else if(e->key() == 16777219)
+    else if(e->key() == 16777219 || e->key() == Qt::Key_Delete)
     {
         qDebug() << "delete";
         delFile(QString(""));

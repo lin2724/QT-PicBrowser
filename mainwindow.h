@@ -8,6 +8,7 @@
 #include <QScrollArea>
 #include <QResizeEvent>
 #include <QTimer>
+#include <QMutex>
 
 namespace Ui {
 class MainWindow;
